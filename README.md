@@ -54,7 +54,7 @@ salamander_<piece>_<articulation>_<perspective>_vl<NN>_rr<N>.<codec>
 
 Pieces used in this pack: `kick1`, `kick2`, `snare1`, `snare2`, `tom1`, `tom2`, `hihat`, `crash1`, `crash2`, `crash3`, `ride1`, `ride2`, `china1`, `china2`, `splash1`, `cowbell1`, `other`.
 
-Articulations used in this pack: `hit`, `mute`, `sidestick`, `closed`, `open`, `foot`, `footsplash`, `tight`, `quarter`, `half`, `loose`, `tip`, `shank`, `edge`, `bell`, `choke`.
+Articulations used in this pack: `hit`, `mute`, `sidestick`, `closed`, `open`, `foot`, `footsplash`, `semiopen1`, `semiopen2`, `semiopen3`, `semiopen4`, `semiopen5`, `semiopen6`, `semiopen7`, `bell`, `choke`.
 
 ### Source tokens and how they were mapped
 
@@ -65,7 +65,7 @@ Articulations used in this pack: `hit`, `mute`, `sidestick`, `closed`, `open`, `
 - `snareStick` → `snare1`, articulation `sidestick`.
 - `hiTom` → `tom1`; `loTom` → `tom2` (ascending size).
 - `hihatFoot` → `foot`; `hihatFootStomp` → `footsplash`.
-- `hihatSemiOpen1` … `hihatSemiOpen7` are seven distinct pedal-openness positions. They map, in ascending openness, to `tight`, `quarter`, `half`, `loose`, `tip`, `shank`, `edge`.
+- `hihatSemiOpen1` … `hihatSemiOpen7` are seven distinct pedal-openness positions. They map, in ascending openness, to `semiopen1` … `semiopen7`.
 - `ride1Bell` / `ride2Bell` → articulation `bell`.
 - `ride2Crash` → `ride2`, articulation `edge` (a ride struck at the edge as a crash); `ride2CrashChoke` → `ride2`, `choke`.
 - `crash1Choke`, `crash2Choke`, `china1Choke`, `china2Choke` → the matching cymbal, articulation `choke`.
@@ -201,16 +201,16 @@ The same data is in [`MAPPING.csv`](MAPPING.csv), one row per sample, sorted by 
 | `OH/hihatClosed_OH_F_7.wav` | `salamander_hihat_closed_main_vl02_rr7.wav` |
 | `OH/hihatClosed_OH_F_8.wav` | `salamander_hihat_closed_main_vl02_rr8.wav` |
 | `OH/hihatClosed_OH_F_9.wav` | `salamander_hihat_closed_main_vl02_rr9.wav` |
-| `OH/hihatSemiOpen7_OH_P_1.wav` | `salamander_hihat_edge_main_vl01_rr1.wav` |
-| `OH/hihatSemiOpen7_OH_P_2.wav` | `salamander_hihat_edge_main_vl01_rr2.wav` |
-| `OH/hihatSemiOpen7_OH_P_3.wav` | `salamander_hihat_edge_main_vl01_rr3.wav` |
-| `OH/hihatSemiOpen7_OH_P_4.wav` | `salamander_hihat_edge_main_vl01_rr4.wav` |
-| `OH/hihatSemiOpen7_OH_P_5.wav` | `salamander_hihat_edge_main_vl01_rr5.wav` |
-| `OH/hihatSemiOpen7_OH_F_1.wav` | `salamander_hihat_edge_main_vl02_rr1.wav` |
-| `OH/hihatSemiOpen7_OH_F_2.wav` | `salamander_hihat_edge_main_vl02_rr2.wav` |
-| `OH/hihatSemiOpen7_OH_F_3.wav` | `salamander_hihat_edge_main_vl02_rr3.wav` |
-| `OH/hihatSemiOpen7_OH_F_4.wav` | `salamander_hihat_edge_main_vl02_rr4.wav` |
-| `OH/hihatSemiOpen7_OH_F_5.wav` | `salamander_hihat_edge_main_vl02_rr5.wav` |
+| `OH/hihatSemiOpen7_OH_P_1.wav` | `salamander_hihat_semiopen7_main_vl01_rr1.wav` |
+| `OH/hihatSemiOpen7_OH_P_2.wav` | `salamander_hihat_semiopen7_main_vl01_rr2.wav` |
+| `OH/hihatSemiOpen7_OH_P_3.wav` | `salamander_hihat_semiopen7_main_vl01_rr3.wav` |
+| `OH/hihatSemiOpen7_OH_P_4.wav` | `salamander_hihat_semiopen7_main_vl01_rr4.wav` |
+| `OH/hihatSemiOpen7_OH_P_5.wav` | `salamander_hihat_semiopen7_main_vl01_rr5.wav` |
+| `OH/hihatSemiOpen7_OH_F_1.wav` | `salamander_hihat_semiopen7_main_vl02_rr1.wav` |
+| `OH/hihatSemiOpen7_OH_F_2.wav` | `salamander_hihat_semiopen7_main_vl02_rr2.wav` |
+| `OH/hihatSemiOpen7_OH_F_3.wav` | `salamander_hihat_semiopen7_main_vl02_rr3.wav` |
+| `OH/hihatSemiOpen7_OH_F_4.wav` | `salamander_hihat_semiopen7_main_vl02_rr4.wav` |
+| `OH/hihatSemiOpen7_OH_F_5.wav` | `salamander_hihat_semiopen7_main_vl02_rr5.wav` |
 | `OH/hihatFoot_OH_MP_1.wav` | `salamander_hihat_foot_main_vl01_rr1.wav` |
 | `OH/hihatFoot_OH_MP_10.wav` | `salamander_hihat_foot_main_vl01_rr10.wav` |
 | `OH/hihatFoot_OH_MP_11.wav` | `salamander_hihat_foot_main_vl01_rr11.wav` |
@@ -227,26 +227,26 @@ The same data is in [`MAPPING.csv`](MAPPING.csv), one row per sample, sorted by 
 | `OH/hihatFootStomp_OH_MP_2.wav` | `salamander_hihat_footsplash_main_vl01_rr2.wav` |
 | `OH/hihatFootStomp_OH_MP_3.wav` | `salamander_hihat_footsplash_main_vl01_rr3.wav` |
 | `OH/hihatFootStomp_OH_MP_4.wav` | `salamander_hihat_footsplash_main_vl01_rr4.wav` |
-| `OH/hihatSemiOpen3_OH_P_1.wav` | `salamander_hihat_half_main_vl01_rr1.wav` |
-| `OH/hihatSemiOpen3_OH_P_2.wav` | `salamander_hihat_half_main_vl01_rr2.wav` |
-| `OH/hihatSemiOpen3_OH_P_3.wav` | `salamander_hihat_half_main_vl01_rr3.wav` |
-| `OH/hihatSemiOpen3_OH_P_4.wav` | `salamander_hihat_half_main_vl01_rr4.wav` |
-| `OH/hihatSemiOpen3_OH_P_5.wav` | `salamander_hihat_half_main_vl01_rr5.wav` |
-| `OH/hihatSemiOpen3_OH_F_1.wav` | `salamander_hihat_half_main_vl02_rr1.wav` |
-| `OH/hihatSemiOpen3_OH_F_2.wav` | `salamander_hihat_half_main_vl02_rr2.wav` |
-| `OH/hihatSemiOpen3_OH_F_3.wav` | `salamander_hihat_half_main_vl02_rr3.wav` |
-| `OH/hihatSemiOpen3_OH_F_4.wav` | `salamander_hihat_half_main_vl02_rr4.wav` |
-| `OH/hihatSemiOpen3_OH_F_5.wav` | `salamander_hihat_half_main_vl02_rr5.wav` |
-| `OH/hihatSemiOpen4_OH_P_1.wav` | `salamander_hihat_loose_main_vl01_rr1.wav` |
-| `OH/hihatSemiOpen4_OH_P_2.wav` | `salamander_hihat_loose_main_vl01_rr2.wav` |
-| `OH/hihatSemiOpen4_OH_P_3.wav` | `salamander_hihat_loose_main_vl01_rr3.wav` |
-| `OH/hihatSemiOpen4_OH_P_4.wav` | `salamander_hihat_loose_main_vl01_rr4.wav` |
-| `OH/hihatSemiOpen4_OH_P_5.wav` | `salamander_hihat_loose_main_vl01_rr5.wav` |
-| `OH/hihatSemiOpen4_OH_F_1.wav` | `salamander_hihat_loose_main_vl02_rr1.wav` |
-| `OH/hihatSemiOpen4_OH_F_2.wav` | `salamander_hihat_loose_main_vl02_rr2.wav` |
-| `OH/hihatSemiOpen4_OH_F_3.wav` | `salamander_hihat_loose_main_vl02_rr3.wav` |
-| `OH/hihatSemiOpen4_OH_F_4.wav` | `salamander_hihat_loose_main_vl02_rr4.wav` |
-| `OH/hihatSemiOpen4_OH_F_5.wav` | `salamander_hihat_loose_main_vl02_rr5.wav` |
+| `OH/hihatSemiOpen3_OH_P_1.wav` | `salamander_hihat_semiopen3_main_vl01_rr1.wav` |
+| `OH/hihatSemiOpen3_OH_P_2.wav` | `salamander_hihat_semiopen3_main_vl01_rr2.wav` |
+| `OH/hihatSemiOpen3_OH_P_3.wav` | `salamander_hihat_semiopen3_main_vl01_rr3.wav` |
+| `OH/hihatSemiOpen3_OH_P_4.wav` | `salamander_hihat_semiopen3_main_vl01_rr4.wav` |
+| `OH/hihatSemiOpen3_OH_P_5.wav` | `salamander_hihat_semiopen3_main_vl01_rr5.wav` |
+| `OH/hihatSemiOpen3_OH_F_1.wav` | `salamander_hihat_semiopen3_main_vl02_rr1.wav` |
+| `OH/hihatSemiOpen3_OH_F_2.wav` | `salamander_hihat_semiopen3_main_vl02_rr2.wav` |
+| `OH/hihatSemiOpen3_OH_F_3.wav` | `salamander_hihat_semiopen3_main_vl02_rr3.wav` |
+| `OH/hihatSemiOpen3_OH_F_4.wav` | `salamander_hihat_semiopen3_main_vl02_rr4.wav` |
+| `OH/hihatSemiOpen3_OH_F_5.wav` | `salamander_hihat_semiopen3_main_vl02_rr5.wav` |
+| `OH/hihatSemiOpen4_OH_P_1.wav` | `salamander_hihat_semiopen4_main_vl01_rr1.wav` |
+| `OH/hihatSemiOpen4_OH_P_2.wav` | `salamander_hihat_semiopen4_main_vl01_rr2.wav` |
+| `OH/hihatSemiOpen4_OH_P_3.wav` | `salamander_hihat_semiopen4_main_vl01_rr3.wav` |
+| `OH/hihatSemiOpen4_OH_P_4.wav` | `salamander_hihat_semiopen4_main_vl01_rr4.wav` |
+| `OH/hihatSemiOpen4_OH_P_5.wav` | `salamander_hihat_semiopen4_main_vl01_rr5.wav` |
+| `OH/hihatSemiOpen4_OH_F_1.wav` | `salamander_hihat_semiopen4_main_vl02_rr1.wav` |
+| `OH/hihatSemiOpen4_OH_F_2.wav` | `salamander_hihat_semiopen4_main_vl02_rr2.wav` |
+| `OH/hihatSemiOpen4_OH_F_3.wav` | `salamander_hihat_semiopen4_main_vl02_rr3.wav` |
+| `OH/hihatSemiOpen4_OH_F_4.wav` | `salamander_hihat_semiopen4_main_vl02_rr4.wav` |
+| `OH/hihatSemiOpen4_OH_F_5.wav` | `salamander_hihat_semiopen4_main_vl02_rr5.wav` |
 | `OH/hihatOpen_OH_P_1.wav` | `salamander_hihat_open_main_vl01_rr1.wav` |
 | `OH/hihatOpen_OH_P_2.wav` | `salamander_hihat_open_main_vl01_rr2.wav` |
 | `OH/hihatOpen_OH_P_3.wav` | `salamander_hihat_open_main_vl01_rr3.wav` |
@@ -265,47 +265,47 @@ The same data is in [`MAPPING.csv`](MAPPING.csv), one row per sample, sorted by 
 | `OH/hihatOpen_OH_FF_4.wav` | `salamander_hihat_open_main_vl03_rr4.wav` |
 | `OH/hihatOpen_OH_FF_5.wav` | `salamander_hihat_open_main_vl03_rr5.wav` |
 | `OH/hihatOpen_OH_FF_6.wav` | `salamander_hihat_open_main_vl03_rr6.wav` |
-| `OH/hihatSemiOpen2_OH_P_1.wav` | `salamander_hihat_quarter_main_vl01_rr1.wav` |
-| `OH/hihatSemiOpen2_OH_P_2.wav` | `salamander_hihat_quarter_main_vl01_rr2.wav` |
-| `OH/hihatSemiOpen2_OH_P_3.wav` | `salamander_hihat_quarter_main_vl01_rr3.wav` |
-| `OH/hihatSemiOpen2_OH_P_4.wav` | `salamander_hihat_quarter_main_vl01_rr4.wav` |
-| `OH/hihatSemiOpen2_OH_P_5.wav` | `salamander_hihat_quarter_main_vl01_rr5.wav` |
-| `OH/hihatSemiOpen2_OH_F_1.wav` | `salamander_hihat_quarter_main_vl02_rr1.wav` |
-| `OH/hihatSemiOpen2_OH_F_2.wav` | `salamander_hihat_quarter_main_vl02_rr2.wav` |
-| `OH/hihatSemiOpen2_OH_F_3.wav` | `salamander_hihat_quarter_main_vl02_rr3.wav` |
-| `OH/hihatSemiOpen2_OH_F_4.wav` | `salamander_hihat_quarter_main_vl02_rr4.wav` |
-| `OH/hihatSemiOpen2_OH_F_5.wav` | `salamander_hihat_quarter_main_vl02_rr5.wav` |
-| `OH/hihatSemiOpen6_OH_P_1.wav` | `salamander_hihat_shank_main_vl01_rr1.wav` |
-| `OH/hihatSemiOpen6_OH_P_2.wav` | `salamander_hihat_shank_main_vl01_rr2.wav` |
-| `OH/hihatSemiOpen6_OH_P_3.wav` | `salamander_hihat_shank_main_vl01_rr3.wav` |
-| `OH/hihatSemiOpen6_OH_P_4.wav` | `salamander_hihat_shank_main_vl01_rr4.wav` |
-| `OH/hihatSemiOpen6_OH_P_5.wav` | `salamander_hihat_shank_main_vl01_rr5.wav` |
-| `OH/hihatSemiOpen6_OH_F_1.wav` | `salamander_hihat_shank_main_vl02_rr1.wav` |
-| `OH/hihatSemiOpen6_OH_F_2.wav` | `salamander_hihat_shank_main_vl02_rr2.wav` |
-| `OH/hihatSemiOpen6_OH_F_3.wav` | `salamander_hihat_shank_main_vl02_rr3.wav` |
-| `OH/hihatSemiOpen6_OH_F_4.wav` | `salamander_hihat_shank_main_vl02_rr4.wav` |
-| `OH/hihatSemiOpen6_OH_F_5.wav` | `salamander_hihat_shank_main_vl02_rr5.wav` |
-| `OH/hihatSemiOpen1_OH_P_1.wav` | `salamander_hihat_tight_main_vl01_rr1.wav` |
-| `OH/hihatSemiOpen1_OH_P_2.wav` | `salamander_hihat_tight_main_vl01_rr2.wav` |
-| `OH/hihatSemiOpen1_OH_P_3.wav` | `salamander_hihat_tight_main_vl01_rr3.wav` |
-| `OH/hihatSemiOpen1_OH_P_4.wav` | `salamander_hihat_tight_main_vl01_rr4.wav` |
-| `OH/hihatSemiOpen1_OH_P_5.wav` | `salamander_hihat_tight_main_vl01_rr5.wav` |
-| `OH/hihatSemiOpen1_OH_P_.wav` | `salamander_hihat_tight_main_vl01_rr6.wav` |
-| `OH/hihatSemiOpen1_OH_F_1.wav` | `salamander_hihat_tight_main_vl02_rr1.wav` |
-| `OH/hihatSemiOpen1_OH_F_2.wav` | `salamander_hihat_tight_main_vl02_rr2.wav` |
-| `OH/hihatSemiOpen1_OH_F_3.wav` | `salamander_hihat_tight_main_vl02_rr3.wav` |
-| `OH/hihatSemiOpen1_OH_F_4.wav` | `salamander_hihat_tight_main_vl02_rr4.wav` |
-| `OH/hihatSemiOpen1_OH_F_5.wav` | `salamander_hihat_tight_main_vl02_rr5.wav` |
-| `OH/hihatSemiOpen5_OH_P_1.wav` | `salamander_hihat_tip_main_vl01_rr1.wav` |
-| `OH/hihatSemiOpen5_OH_P_2.wav` | `salamander_hihat_tip_main_vl01_rr2.wav` |
-| `OH/hihatSemiOpen5_OH_P_3.wav` | `salamander_hihat_tip_main_vl01_rr3.wav` |
-| `OH/hihatSemiOpen5_OH_P_4.wav` | `salamander_hihat_tip_main_vl01_rr4.wav` |
-| `OH/hihatSemiOpen5_OH_P_5.wav` | `salamander_hihat_tip_main_vl01_rr5.wav` |
-| `OH/hihatSemiOpen5_OH_F_1.wav` | `salamander_hihat_tip_main_vl02_rr1.wav` |
-| `OH/hihatSemiOpen5_OH_F_2.wav` | `salamander_hihat_tip_main_vl02_rr2.wav` |
-| `OH/hihatSemiOpen5_OH_F_3.wav` | `salamander_hihat_tip_main_vl02_rr3.wav` |
-| `OH/hihatSemiOpen5_OH_F_4.wav` | `salamander_hihat_tip_main_vl02_rr4.wav` |
-| `OH/hihatSemiOpen5_OH_F_5.wav` | `salamander_hihat_tip_main_vl02_rr5.wav` |
+| `OH/hihatSemiOpen2_OH_P_1.wav` | `salamander_hihat_semiopen2_main_vl01_rr1.wav` |
+| `OH/hihatSemiOpen2_OH_P_2.wav` | `salamander_hihat_semiopen2_main_vl01_rr2.wav` |
+| `OH/hihatSemiOpen2_OH_P_3.wav` | `salamander_hihat_semiopen2_main_vl01_rr3.wav` |
+| `OH/hihatSemiOpen2_OH_P_4.wav` | `salamander_hihat_semiopen2_main_vl01_rr4.wav` |
+| `OH/hihatSemiOpen2_OH_P_5.wav` | `salamander_hihat_semiopen2_main_vl01_rr5.wav` |
+| `OH/hihatSemiOpen2_OH_F_1.wav` | `salamander_hihat_semiopen2_main_vl02_rr1.wav` |
+| `OH/hihatSemiOpen2_OH_F_2.wav` | `salamander_hihat_semiopen2_main_vl02_rr2.wav` |
+| `OH/hihatSemiOpen2_OH_F_3.wav` | `salamander_hihat_semiopen2_main_vl02_rr3.wav` |
+| `OH/hihatSemiOpen2_OH_F_4.wav` | `salamander_hihat_semiopen2_main_vl02_rr4.wav` |
+| `OH/hihatSemiOpen2_OH_F_5.wav` | `salamander_hihat_semiopen2_main_vl02_rr5.wav` |
+| `OH/hihatSemiOpen6_OH_P_1.wav` | `salamander_hihat_semiopen6_main_vl01_rr1.wav` |
+| `OH/hihatSemiOpen6_OH_P_2.wav` | `salamander_hihat_semiopen6_main_vl01_rr2.wav` |
+| `OH/hihatSemiOpen6_OH_P_3.wav` | `salamander_hihat_semiopen6_main_vl01_rr3.wav` |
+| `OH/hihatSemiOpen6_OH_P_4.wav` | `salamander_hihat_semiopen6_main_vl01_rr4.wav` |
+| `OH/hihatSemiOpen6_OH_P_5.wav` | `salamander_hihat_semiopen6_main_vl01_rr5.wav` |
+| `OH/hihatSemiOpen6_OH_F_1.wav` | `salamander_hihat_semiopen6_main_vl02_rr1.wav` |
+| `OH/hihatSemiOpen6_OH_F_2.wav` | `salamander_hihat_semiopen6_main_vl02_rr2.wav` |
+| `OH/hihatSemiOpen6_OH_F_3.wav` | `salamander_hihat_semiopen6_main_vl02_rr3.wav` |
+| `OH/hihatSemiOpen6_OH_F_4.wav` | `salamander_hihat_semiopen6_main_vl02_rr4.wav` |
+| `OH/hihatSemiOpen6_OH_F_5.wav` | `salamander_hihat_semiopen6_main_vl02_rr5.wav` |
+| `OH/hihatSemiOpen1_OH_P_1.wav` | `salamander_hihat_semiopen1_main_vl01_rr1.wav` |
+| `OH/hihatSemiOpen1_OH_P_2.wav` | `salamander_hihat_semiopen1_main_vl01_rr2.wav` |
+| `OH/hihatSemiOpen1_OH_P_3.wav` | `salamander_hihat_semiopen1_main_vl01_rr3.wav` |
+| `OH/hihatSemiOpen1_OH_P_4.wav` | `salamander_hihat_semiopen1_main_vl01_rr4.wav` |
+| `OH/hihatSemiOpen1_OH_P_5.wav` | `salamander_hihat_semiopen1_main_vl01_rr5.wav` |
+| `OH/hihatSemiOpen1_OH_P_.wav` | `salamander_hihat_semiopen1_main_vl01_rr6.wav` |
+| `OH/hihatSemiOpen1_OH_F_1.wav` | `salamander_hihat_semiopen1_main_vl02_rr1.wav` |
+| `OH/hihatSemiOpen1_OH_F_2.wav` | `salamander_hihat_semiopen1_main_vl02_rr2.wav` |
+| `OH/hihatSemiOpen1_OH_F_3.wav` | `salamander_hihat_semiopen1_main_vl02_rr3.wav` |
+| `OH/hihatSemiOpen1_OH_F_4.wav` | `salamander_hihat_semiopen1_main_vl02_rr4.wav` |
+| `OH/hihatSemiOpen1_OH_F_5.wav` | `salamander_hihat_semiopen1_main_vl02_rr5.wav` |
+| `OH/hihatSemiOpen5_OH_P_1.wav` | `salamander_hihat_semiopen5_main_vl01_rr1.wav` |
+| `OH/hihatSemiOpen5_OH_P_2.wav` | `salamander_hihat_semiopen5_main_vl01_rr2.wav` |
+| `OH/hihatSemiOpen5_OH_P_3.wav` | `salamander_hihat_semiopen5_main_vl01_rr3.wav` |
+| `OH/hihatSemiOpen5_OH_P_4.wav` | `salamander_hihat_semiopen5_main_vl01_rr4.wav` |
+| `OH/hihatSemiOpen5_OH_P_5.wav` | `salamander_hihat_semiopen5_main_vl01_rr5.wav` |
+| `OH/hihatSemiOpen5_OH_F_1.wav` | `salamander_hihat_semiopen5_main_vl02_rr1.wav` |
+| `OH/hihatSemiOpen5_OH_F_2.wav` | `salamander_hihat_semiopen5_main_vl02_rr2.wav` |
+| `OH/hihatSemiOpen5_OH_F_3.wav` | `salamander_hihat_semiopen5_main_vl02_rr3.wav` |
+| `OH/hihatSemiOpen5_OH_F_4.wav` | `salamander_hihat_semiopen5_main_vl02_rr4.wav` |
+| `OH/hihatSemiOpen5_OH_F_5.wav` | `salamander_hihat_semiopen5_main_vl02_rr5.wav` |
 | `OH/kick_OH_P_1.wav` | `salamander_kick1_hit_main_vl01_rr1.wav` |
 | `OH/kick_OH_P_2.wav` | `salamander_kick1_hit_main_vl01_rr2.wav` |
 | `OH/kick_OH_P_3.wav` | `salamander_kick1_hit_main_vl01_rr3.wav` |
